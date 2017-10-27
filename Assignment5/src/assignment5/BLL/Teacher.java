@@ -14,14 +14,21 @@ import java.util.List;
  */
 public class Teacher extends Person
 {
-    List<String> subjects;
-    String initials;
-    double salary;
+    private List<String> subjects;
+    private String main;
+    private String initials;
+    private double salary;
+
+    public String getMain()
+    {
+        return main;
+    }
     
     public Teacher(int id, String name)
     {
         super(id, name);
         subjects = new ArrayList();
+        this.main = "";
         setInitials();
     }
     
@@ -30,6 +37,7 @@ public class Teacher extends Person
         super(id, name);
         subjects = new ArrayList();
         subjects.add(main);
+        this.main = main;
         setInitials();
     }
     
@@ -70,6 +78,10 @@ public class Teacher extends Person
     public void addSubject(String subject)
     {
         this.subjects.add(subject);
+        if (this.main.equals(""))
+        {
+            main = subject;
+        }
     }
     
     @Override

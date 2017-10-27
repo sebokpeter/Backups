@@ -5,8 +5,6 @@
  */
 package assignment5.BLL;
 
-import assignment5.UI.PersonManager;
-
 /**
  *
  * @author sebok

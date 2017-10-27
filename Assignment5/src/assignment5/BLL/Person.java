@@ -5,6 +5,8 @@
  */
 package assignment5.BLL;
 
+import javafx.beans.property.SimpleStringProperty;
+
 /**
  *
  * @author sebok

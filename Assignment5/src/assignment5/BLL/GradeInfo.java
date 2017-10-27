@@ -9,7 +9,7 @@ package assignment5.BLL;
  *
  * @author sebok
  */
-class GradeInfo
+public class GradeInfo
 {
     private String subject;
     private int grade;
